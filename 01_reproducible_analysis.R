@@ -125,7 +125,7 @@ score_from_items <- function(d) {
   # though their free-text content is never used in scoring (which is why
   # they were dropped from the shared data file). Add them back as empty
   # placeholders so the function runs unchanged.
-  for (nc in c("d1_notes", "d2_notes", "d3_notes", "d4_notes", "d5_notes")) {
+  for (nc in c("d1_notes", "d2_notes", "d3_notes", "d4_notes", "d5_notes", "d5_20")) {
     if (!nc %in% names(d)) d[[nc]] <- NA_character_
   }
   metapsyTools:::createRobRatings(rob.data = d, database = NULL)$rob.data
